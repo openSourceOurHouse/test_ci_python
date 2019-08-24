@@ -12,6 +12,12 @@ branches:
   only:
   - master
   - develop
+
+addons:
+sonarcloud:
+  organization: "marcocaballero-github"
+  token:
+    secure: "$SONAR_TOKEN"
   
 install:
   - pip install pytest pytest-cov python-coveralls
